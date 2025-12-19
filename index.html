@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,32 +8,38 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
         /* Hero Section */
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             padding: 120px 0;
         }
 
-        .hero-section h1 { font-size: 3.5rem; font-weight: 700; }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
 
         /* Card Hover Effects */
-        .card { 
-            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: none;
             border-radius: 12px;
             overflow: hidden;
         }
-        .card:hover { 
-            transform: translateY(-10px); 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         /* Client Images */
@@ -51,171 +58,195 @@
             border-top: 4px solid #ffc107;
         }
 
-        .btn-primary { padding: 10px 25px; border-radius: 8px; }
-        .form-control { border-radius: 8px; padding: 12px; }
+        .btn-primary {
+            padding: 10px 25px;
+            border-radius: 8px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            padding: 12px;
+        }
     </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">WEBNEST</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#clients">Testimonials</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-3" href="#contact">Contact Us</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">WEBNEST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Testimonials</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-warning" href="/admin-panel/admin.html">Admin Panel</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-3" href="#contact">Contact
+                            Us</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<section class="hero-section text-center text-white">
-    <div class="container">
-        <h1 class="display-3">Future-Proof Your Business</h1>
-        <p class="lead mb-4">We design and develop high-performance digital products that help brands grow in the modern age.</p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="#projects" class="btn btn-primary btn-lg">View Our Work</a>
-            <a href="#contact" class="btn btn-light btn-lg">Get a Quote</a>
+    <section class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="display-3">Future-Proof Your Business</h1>
+            <p class="lead mb-4">We design and develop high-performance digital products that help brands grow in the
+                modern age.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#projects" class="btn btn-primary btn-lg">View Our Work</a>
+                <a href="#contact" class="btn btn-light btn-lg">Get a Quote</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="projects" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Featured Projects</h2>
-            <p class="text-muted">A glimpse into the digital transformations we've led recently.</p>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="E-commerce">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">E-Commerce Titan</h5>
-                        <p class="card-text text-muted">A fully custom online store built for speed and high conversion rates.</p>
-                        <button class="btn btn-link p-0 text-decoration-none fw-bold">Case Study &rarr;</button>
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured Projects</h2>
+                <p class="text-muted">A glimpse into the digital transformations we've led recently.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80"
+                            class="card-img-top" alt="E-commerce">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">E-Commerce Titan</h5>
+                            <p class="card-text text-muted">A fully custom online store built for speed and high
+                                conversion rates.</p>
+                            <button class="btn btn-link p-0 text-decoration-none fw-bold">Case Study &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80"
+                            class="card-img-top" alt="Analytics App">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">SaaS Dashboard</h5>
+                            <p class="card-text text-muted">Real-time data visualization platform for enterprise-level
+                                logistics.</p>
+                            <button class="btn btn-link p-0 text-decoration-none fw-bold">Case Study &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=500&q=80"
+                            class="card-img-top" alt="Creative Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Creative Hub</h5>
+                            <p class="card-text text-muted">A minimalist portfolio experience for an award-winning
+                                design agency.</p>
+                            <button class="btn btn-link p-0 text-decoration-none fw-bold">Case Study &rarr;</button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Analytics App">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">SaaS Dashboard</h5>
-                        <p class="card-text text-muted">Real-time data visualization platform for enterprise-level logistics.</p>
-                        <button class="btn btn-link p-0 text-decoration-none fw-bold">Case Study &rarr;</button>
+    <section id="clients" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">What Our Partners Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="client-card bg-white p-4 shadow-sm rounded text-center">
+                        <img src="https://i.pravatar.cc/150?u=1" alt="John">
+                        <p class="fst-italic text-muted">"WEBNEST transformed our legacy system into a modern
+                            powerhouse. Their attention to detail is unmatched."</p>
+                        <h6 class="mb-0 fw-bold">John Doe</h6>
+                        <small class="text-primary">CEO, TechFlow</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="client-card bg-white p-4 shadow-sm rounded text-center">
+                        <img src="https://i.pravatar.cc/150?u=2" alt="Jane">
+                        <p class="fst-italic text-muted">"Professional, fast, and creative. They didn't just build a
+                            website; they built a growth engine for us."</p>
+                        <h6 class="mb-0 fw-bold">Jane Smith</h6>
+                        <small class="text-primary">Marketing Director, Nova</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="client-card bg-white p-4 shadow-sm rounded text-center">
+                        <img src="https://i.pravatar.cc/150?u=5" alt="David">
+                        <p class="fst-italic text-muted">"The team delivered ahead of schedule and exceeded all our
+                            technical requirements. Highly recommend!"</p>
+                        <h6 class="mb-0 fw-bold">David Brown</h6>
+                        <small class="text-primary">Founder, Scalely</small>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Creative Portfolio">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Creative Hub</h5>
-                        <p class="card-text text-muted">A minimalist portfolio experience for an award-winning design agency.</p>
-                        <button class="btn btn-link p-0 text-decoration-none fw-bold">Case Study &rarr;</button>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-4">
+                    <h2 class="fw-bold">Ready to Start?</h2>
+                    <p class="text-muted">Fill out the form below and we'll get back to you within 24 hours.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 border p-4 rounded-4 shadow-sm">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="tel" class="form-control" placeholder="Mobile Number">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Tell us about your project"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-success w-100 py-3 fw-bold">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section text-white py-5">
+        <div class="container text-center">
+            <h3 class="fw-bold">Stay Ahead of the Curve</h3>
+            <p class="mb-4">Get the latest digital trends and insights delivered to your inbox.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="yourname@email.com">
+                        <button class="btn btn-warning fw-bold px-4">Subscribe</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="clients" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center mb-5 fw-bold">What Our Partners Say</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="client-card bg-white p-4 shadow-sm rounded text-center">
-                    <img src="https://i.pravatar.cc/150?u=1" alt="John">
-                    <p class="fst-italic text-muted">"WEBNEST transformed our legacy system into a modern powerhouse. Their attention to detail is unmatched."</p>
-                    <h6 class="mb-0 fw-bold">John Doe</h6>
-                    <small class="text-primary">CEO, TechFlow</small>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="client-card bg-white p-4 shadow-sm rounded text-center">
-                    <img src="https://i.pravatar.cc/150?u=2" alt="Jane">
-                    <p class="fst-italic text-muted">"Professional, fast, and creative. They didn't just build a website; they built a growth engine for us."</p>
-                    <h6 class="mb-0 fw-bold">Jane Smith</h6>
-                    <small class="text-primary">Marketing Director, Nova</small>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="client-card bg-white p-4 shadow-sm rounded text-center">
-                    <img src="https://i.pravatar.cc/150?u=5" alt="David">
-                    <p class="fst-italic text-muted">"The team delivered ahead of schedule and exceeded all our technical requirements. Highly recommend!"</p>
-                    <h6 class="mb-0 fw-bold">David Brown</h6>
-                    <small class="text-primary">Founder, Scalely</small>
-                </div>
-            </div>
+    <footer class="bg-dark text-secondary text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 WEBNEST Digital Solutions. Built with passion for the web.</p>
         </div>
-    </div>
-</section>
+    </footer>
 
-<section id="contact" class="py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center mb-4">
-                <h2 class="fw-bold">Ready to Start?</h2>
-                <p class="text-muted">Fill out the form below and we'll get back to you within 24 hours.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-6 border p-4 rounded-4 shadow-sm">
-                <form>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Full Name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
-                        </div>
-                        <div class="col-12">
-                            <input type="tel" class="form-control" placeholder="Mobile Number">
-                        </div>
-                        <div class="col-12">
-                            <textarea class="form-control" rows="4" placeholder="Tell us about your project"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-success w-100 py-3 fw-bold">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="newsletter-section text-white py-5">
-    <div class="container text-center">
-        <h3 class="fw-bold">Stay Ahead of the Curve</h3>
-        <p class="mb-4">Get the latest digital trends and insights delivered to your inbox.</p>
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <div class="input-group">
-                    <input type="email" class="form-control" placeholder="yourname@email.com">
-                    <button class="btn btn-warning fw-bold px-4">Subscribe</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-dark text-secondary text-center py-4 border-top border-secondary">
-    <div class="container">
-        <p class="mb-0">&copy; 2025 WEBNEST Digital Solutions. Built with passion for the web.</p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
